@@ -1,63 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HTML CSS JavaScript Practical Programs - M.N. Siddhartha Reddy 250200267</title>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML CSS JavaScript Practical Programs</title><link rel="stylesheet" href="assets/style.css">
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:#f5f7fb;color:#172033}
-.hero{background:linear-gradient(135deg,#111827,#4f46e5);color:white;padding:70px 20px;text-align:center}
-.hero h1{font-size:clamp(2rem,5vw,3.5rem);margin:0 0 12px}
-.hero p{margin:0;color:#e0e7ff;font-size:1.05rem}
-.container{max-width:1100px;margin:auto;padding:40px 18px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
-.card{background:white;border:1px solid #e2e8f0;border-radius:20px;padding:28px;box-shadow:0 10px 30px #0000000d}
-.card .icon{font-size:42px}
-.card h2{margin:15px 0 8px}
-.card p{color:#64748b;min-height:48px}
-.btn{display:inline-block;margin-top:12px;padding:12px 18px;border-radius:10px;background:#4f46e5;color:white;text-decoration:none;font-weight:700}
-.info{margin-top:30px;padding:22px;background:white;border:1px solid #e2e8f0;border-radius:16px}
-footer{text-align:center;color:#64748b;padding:30px}
-</style>
-</head>
-<body>
-<header class="hero">
-  <h1>HTML • CSS • JavaScript</h1>
-  <p>Practical Programs Website</p>
-  <p>M.N. Siddhartha Reddy — 250200267</p>
-</header>
-<main class="container">
-  <section class="cards">
-    <article class="card">
-      <div class="icon">🌐</div>
-      <h2>HTML Programs</h2>
-      <p>HTML fundamentals, elements, forms, tables, media and page structures.</p>
-      <a class="btn" href="html/index.html">View HTML Programs</a>
-    </article>
-    <article class="card">
-      <div class="icon">🎨</div>
-      <h2>CSS Programs</h2>
-      <p>Selectors, layouts, responsive design, animations, effects and complete page designs.</p>
-      <a class="btn" href="css/index.html">View CSS Programs</a>
-    </article>
-    <article class="card">
-      <div class="icon">⚡</div>
-      <h2>JavaScript Programs</h2>
-      <p>JavaScript basics, DOM, events, forms, browser features, storage and practical mini programs.</p>
-      <a class="btn" href="javascript/index.html">View JavaScript Programs</a>
-    </article>
-  </section>
-  <section class="info">
-    <h2>Project Overview</h2>
-    <p>This website contains 210 separate practical programs collected from the supplied project folder: 15 HTML programs, 75 CSS programs and 120 JavaScript programs.</p>
-    <p>Every program is kept as a separate HTML file and can be opened directly in a web browser.</p>
-    <p>M.N. Siddhartha Reddy — 250200267</p>
-  </section>
+body{background:linear-gradient(135deg,#f8fbff,#eef2ff 55%,#faf5ff)}
+.hero{max-width:1150px;margin:0 auto;padding:70px 20px 30px;text-align:center}
+.hero .tag{display:inline-block;padding:7px 12px;border-radius:999px;background:#fff;border:1px solid #e4e7ec;color:#475467;font-weight:700;font-size:.85rem}
+.hero h1{font-size:clamp(2.1rem,5vw,4rem);line-height:1.08;margin:18px 0 12px}
+.hero h1 span{color:#2563eb}.hero p{max-width:760px;margin:auto;color:#667085;font-size:1.05rem}
+.student{margin:25px auto 0;max-width:680px;background:#fff;border:1px solid #e4e7ec;border-radius:18px;padding:16px;box-shadow:var(--shadow)}
+.grid{max-width:1150px;margin:30px auto 70px;padding:0 20px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border:1px solid #e4e7ec;border-radius:22px;padding:28px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-height:250px}
+.icon{width:54px;height:54px;display:grid;place-items:center;border-radius:15px;background:#eef4ff;font-size:1.5rem}
+.card h2{margin:20px 0 8px}.card p{color:#667085;flex:1}.btn{display:inline-block;text-decoration:none;text-align:center;padding:12px 16px;border-radius:11px;background:#182230;color:#fff;font-weight:750}.btn:hover{background:#2563eb}
+@media(max-width:850px){.grid{grid-template-columns:1fr}}
+</style></head><body>
+<nav class="site-nav"><a class="brand" href="index.html">WTIP Practical Programs</a><div class="links"><a href="html/index.html">HTML</a><a href="css/index.html">CSS</a><a href="javascript/index.html">JavaScript</a><a href="README.md">README</a></div></nav>
+<header class="hero"><span class="tag">Web Technology & Internet Programming</span><h1>HTML <span>•</span> CSS <span>•</span> JavaScript<br>Practical Programs</h1>
+<p>A complete collection of practical programs with separate executable HTML files, organized by subject area and ready to run in a browser.</p>
+<div class="student"><strong>Pusala Nithin</strong> &nbsp;•&nbsp; Register No. 250200185 &nbsp;•&nbsp; Section 5</div></header>
+<main class="grid">
+<article class="card"><div class="icon">🌐</div><h2>HTML Programs</h2><p>Fundamentals, lists, tables, forms, multimedia, semantic HTML, HTML5 inputs, and practical webpages.</p><a class="btn" href="html/index.html">View HTML Programs →</a></article>
+<article class="card"><div class="icon">🎨</div><h2>CSS Programs</h2><p>Selectors, box model, positioning, Flexbox, Grid, responsive layouts, animations, effects, and complete designs.</p><a class="btn" href="css/index.html">View CSS Programs →</a></article>
+<article class="card"><div class="icon">⚡</div><h2>JavaScript Programs</h2><p>JavaScript basics, functions, arrays, DOM, events, forms, browser objects, storage, and mini projects.</p><a class="btn" href="javascript/index.html">View JavaScript Programs →</a></article>
 </main>
-<footer>
-  HTML • CSS • JavaScript Practical Programs <br>
-  M.N. Siddhartha Reddy — 250200267
-</footer>
-</body>
-</html>
+<footer class="site-footer">All programs are maintained as separate HTML files for practical demonstration and easy navigation.</footer>
+</body></html>
