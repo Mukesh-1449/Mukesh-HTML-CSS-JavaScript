@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>38 - Visibility & Hiding Elements</title>
+    <style>
+        .box { padding: 15px; background: #3498db; color: white; margin-bottom: 10px; font-family: sans-serif; }
+        .hidden-display { display: none; } /* Removes element from layout layout space */
+        .hidden-visibility { visibility: hidden; } /* Hides element but leaves layout gap */
+    </style>
+</head>
+<body>
+    <div class="box">Visible Box 1</div>
+    <div class="box hidden-visibility">Hidden Box (Visibility: Hidden - Preserves space)</div>
+    <div class="box">Visible Box 2</div>
+    <div class="box hidden-display">Hidden Box (Display: None)</div>
+    <div class="box">Visible Box 3</div>
+</body>
+</html>
